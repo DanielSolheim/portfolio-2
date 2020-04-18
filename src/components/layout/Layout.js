@@ -7,8 +7,9 @@ import {
 } from "react-router-dom";
 import Home from '../home/Home';
 import Contact from './../contact/Contact';
-import Cv from './../cv/Cv';
+import Skills from './../skills/Skills';
 import About from './../about/About';
+import ProjectDetail from './../home/ProjectDetail';
 
 
 export default function Layout(){
@@ -29,7 +30,7 @@ export default function Layout(){
         </div>
 
         <div className="navLinks navLinks__right">
-            <NavLink className="navLink navLink--cv" to="/cv"> Skills </NavLink>
+            <NavLink className="navLink navLink--skills" to="/skills"> Skills </NavLink>
             <NavLink className="navLink navLink--contact" to="/contact">  Contact </NavLink>
 
         </div>
@@ -40,7 +41,8 @@ export default function Layout(){
         <Route path="/" exact component={Home}/>
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        <Route path="/cv" component={Cv} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/project/:id" component={ProjectDetail} />
 
     </Switch>
 

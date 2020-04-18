@@ -1,0 +1,77 @@
+/* ------------------------------- HomeContent  ---------------------------------*/
+
+
+.HomeHero{
+background-image: url('./../../images/forscreen.jpg');
+background-size: cover;
+height: 600px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+ p{
+   color: white;
+   margin: auto;
+   font-size: 3em;
+  }
+}
+
+.p1, .p2, .p3{
+  grid-column: 1/2;
+}
+
+.p1 {
+  grid-row: 2/3;
+}
+
+.p2 {
+  grid-row: 3/4;
+}
+.p3 {
+  grid-row: 4/5;
+}
+
+.gradient-text{
+  background: rgb(133,0,228);
+  background: linear-gradient(90deg, rgba(133,0,228,1) 0%, rgba(204,133,230,1) 100%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+/* ---------------------------------- HomeProjects --------------------------------*/
+
+/* this needs to be mobile first */
+.HomeProjects {
+  width: 70%;
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 300px;
+  margin-top: 50px;
+}
+
+
+.project {
+  width: 80%;
+  color: white;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  margin: auto;
+ .overlay {
+   background-color: rgba(0,0, 0, 0.7);
+   border-radius: 10px;
+  p {
+    margin:  auto; 
+  }
+ }
+}
+
+
+.project button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 150px;
+}

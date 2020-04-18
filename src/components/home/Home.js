@@ -28,25 +28,21 @@ fetch(BASE_URL)
     <div className="Home">
        <HomeHero/>
           <div className="HomeProjects">
-       {projects.map(function(project){
-         const {name, id, description, imageSrc} = project;
+              {projects.map(function(project){
+                const {name, id, description, imageSrc} = project;
 
-         return(
-
-               <HomeProjects
-               name={name}
-               key={id}
-               description = {description}
-               imageSrc={imageSrc}
-               />
-
-
-
-
-             )
-           }
-         )
-       }
+                return(
+                      <HomeProjects
+                      name={name}
+                      id={id}
+                      description = {description}
+                      imageSrc={imageSrc}
+                      key={id}
+                      />
+                    )
+                  }
+                )
+              }
          </div>
     </div>
 

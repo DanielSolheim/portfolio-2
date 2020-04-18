@@ -1,0 +1,19 @@
+.Skills{
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 1fr 15%;
+  .Design{
+    grid-column: 2/3;
+  }
+  .FrontEnd {
+    grid-column: 3/4;
+  }
+  .Other {
+    grid-column: 4/5;
+  }
+}
+
+.skillblock{
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 10px;
+}

@@ -1,0 +1,17 @@
+.About {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  h2 span{
+    background-color: purple;
+    color: white;
+    padding: 10px;
+  }
+
+}
+
+
+
+.Intro,.Experience, .Development{
+  grid-column: 2/3;
+  margin-top: 50px;
+}
