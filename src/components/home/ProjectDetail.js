@@ -25,15 +25,35 @@ useEffect(() => {
 
 }, [url])
 
- const {name, description, imageSrc} = detail;
+ const {name, githubLink, websiteLink, hrs, mainTool, taskDescription, firstImage, secondDescription, secondImage, resultDescription, learned1, learned2, learned3} = detail;
 
 
 
   return (
-    <div className="ProjectDetail">
+    <div className="ProjectDetail detail">
        <h3> {name} </h3>
-       <p> {description} </p>
-       <img src={imageSrc} alt={description} />  
+      <div className="detail--links">
+         <a className="detail--link detail--link__github" href={githubLink}> Github </a>
+         <a className="detail--link detail--link__website" href={websiteLink}> Website </a>
+      </div>
+       <div className="detail--stats">
+         <p className="detail--stats__hrs">{hrs} </p>
+         <p className="detail--stats__mainTool"> {mainTool} </p>
+       </div>
+       <h3> The Task </h3>
+      <p> {taskDescription} </p>
+      <img src={firstImage} />
+      <p> {secondDescription} </p>
+      <img src={secondImage}/>
+      <h3> Result </h3>
+      <p> {resultDescription} </p>
+      <h3> Learned </h3>
+     <ul>
+       <li>{learned1}</li>
+       <li>{learned2}</li>
+       <li>{learned3}</li>
+     </ul>
+
     </div>
   );
 }

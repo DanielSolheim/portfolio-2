@@ -1,10 +1,10 @@
-import React from 'react';
+  import React from 'react';
 import {Link } from 'react-router-dom';
 
 
 export default function HomeProjects({name, id, description, imageSrc}){
   //why is id undefined?
-  console.log(id); 
+  console.log(id);
   return (
 
       <div style={{ backgroundImage: `url(${imageSrc})` }}  key={id} className="project" >
