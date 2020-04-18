@@ -1,0 +1,12 @@
+footer{
+  width: 100%;
+  background-color: black;
+  display: grid;
+
+  opacity: 0.5;
+  .copy{
+    margin: auto;
+    padding: 20px;
+    color: white;
+  }
+}

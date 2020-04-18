@@ -3,6 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
+    Link,
     NavLink,
 } from "react-router-dom";
 import Home from '../home/Home';
@@ -26,7 +27,9 @@ export default function Layout(){
         </div>
 
         <div className="navLogo">
-             <img src="./images/logo-white.png" alt="logo" />
+          <Link to="/">
+             <img src="https://res.cloudinary.com/dyic445sm/image/upload/v1587245217/Portfolio/logo-white_jhnaoe.png" alt="logo" />
+          </Link>  
         </div>
 
         <div className="navLinks navLinks__right">
@@ -45,6 +48,11 @@ export default function Layout(){
         <Route path="/project/:id" component={ProjectDetail} />
 
     </Switch>
+
+
+    <footer>
+        <i className="copy"> @Daniel Solheim </i>
+    </footer>
 
     </div>
   </Router>

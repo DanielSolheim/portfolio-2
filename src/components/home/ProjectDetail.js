@@ -31,16 +31,15 @@ useEffect(() => {
 
   return (
     <div className="ProjectDetail detail">
-       <h3> {name} </h3>
+      <h1> {name} </h1>
       <div className="detail--links">
          <a className="detail--link detail--link__github" href={githubLink}> Github </a>
          <a className="detail--link detail--link__website" href={websiteLink}> Website </a>
       </div>
-       <div className="detail--stats">
-         <p className="detail--stats__hrs">{hrs} </p>
+      <div className="detail--stats">
          <p className="detail--stats__mainTool"> {mainTool} </p>
-       </div>
-       <h3> The Task </h3>
+      </div>
+      <h3> The Task </h3>
       <p> {taskDescription} </p>
       <img src={firstImage} />
       <p> {secondDescription} </p>
@@ -48,11 +47,11 @@ useEffect(() => {
       <h3> Result </h3>
       <p> {resultDescription} </p>
       <h3> Learned </h3>
-     <ul>
-       <li>{learned1}</li>
-       <li>{learned2}</li>
-       <li>{learned3}</li>
-     </ul>
+      <ul>
+         <li>{learned1}</li>
+         <li>{learned2}</li>
+         <li>{learned3}</li>
+      </ul>
 
     </div>
   );

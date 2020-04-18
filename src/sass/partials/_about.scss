@@ -2,9 +2,9 @@
   display: grid;
   grid-template-columns: 20% 60% 20%;
   h2 span{
-    background-color: purple;
-    color: white;
+    border-left: 3px solid $mainPurple;
     padding: 10px;
+    height: auto; 
   }
 
 }

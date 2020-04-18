@@ -3,17 +3,9 @@
 /* -------------------------------------- Contact------------------------- */
 
 .ContactCard h1, .ContactForm h1 {
-  background: rgb(133,0,228);
-  background: linear-gradient(90deg, rgba(133,0,228,1) 0%, rgba(204,133,230,1) 100%);
+  border-left: 3px solid $mainPurple;
   padding: 10px;
-  border-radius: 10px;
-  text-align: center;
 }
-
-.ContactCard .portrait{
- border-radius: 10px;
-}
-
 
 .ContactCard h3{
    text-align: center;
@@ -24,10 +16,10 @@
 .card-email, .card-phone{
   display: grid;
   grid-template-columns: 20px 1fr;
- text-align: center;
- border-bottom: 2px solid purple;
- margin-bottom: 20px;
- padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 2px solid $mainPurple;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .card-email img, .card-phone img{
@@ -42,18 +34,31 @@
 .form input, .form textarea {
   width: 100%;
   border: 1px solid black;
-  border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
   box-sizing: border-box;
 }
 
+
+
 .form input:focus, .form textarea:focus  {
-  border: 2px solid purple;
+  border: 2px solid $mainPurple;
 }
 
 .form textarea {
   height: 150px;
+}
+
+.form--submit{
+  background-color: white;
+  border: 3px solid black !important;
+  &:hover{
+    background-color: $mainPurple;
+    color: white;
+    border: 3px solid $mainPurple !important;
+    cursor: pointer;
+
+  }
 }
 
 
@@ -66,7 +71,6 @@
       .ContactCard{
         grid-column: 2/3;
         margin: auto;
-        width: 100%;
         margin-top: 20px;
       }
 
@@ -91,26 +95,58 @@
 }
 
 
+@media only screen and (max-width: 700px){
+   .ContactCard{
+     width: 80%;
+   }
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 900px){
+   .ContactCard{
+     width: 50%;
+   }
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+   .ContactCard{
+     width: 70%;
+   }
+}
+
+@media only screen and (min-width: 1200px){
+   .ContactCard{
+     width: 50%;
+   }
+}
+
+
+
 
 
 @media only screen and (min-width: 900px) {
 .Contact {
   display: grid;
-  grid-template-columns:10% 1fr 1.3fr 10%;
-
+  grid-template-columns:10% 1fr 1fr 10%;
+  margin-top: 20px;
 }
 
 
 .ContactCard{
   grid-column: 2/3;
-  margin: auto;
+  margin: 0;
 }
 
+
+.ContactCard .portrait{
+  width: 100%;
+}
 
 
 .ContactForm{
   grid-column: 3/4;
-  margin:  auto;
+  margin:  0;
 }
 
 }
