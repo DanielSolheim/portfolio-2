@@ -1,19 +1,91 @@
-.Skills{
+
+
+
+.Skills {
   display: grid;
-  grid-template-columns: 15% 1fr 1fr 1fr 15%;
-  .Design{
-    grid-column: 2/3;
-  }
-  .FrontEnd {
-    grid-column: 3/4;
-  }
-  .Other {
-    grid-column: 4/5;
+
+  .Skills--container{
+    display: grid;
+
+    margin-top: 40px;
+    .Skillblock{
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+    }
   }
 }
 
-.skillblock{
-  border: 1px solid black;
-  box-sizing: border-box;
-  margin: 10px;
+
+.Skillblock .skill{
+  display: grid;
+  grid-template-columns: 20px auto;
+  margin-top: 10px;
+  .skill-circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    border: 2px solid $mainPurple;
+    margin: auto;
+  }
+  p{
+    margin-left: 10px;
+  }
+}
+
+.Skills--description{
+   h2{
+     border-bottom: none;
+     text-align: center;
+   }
+   p{
+     margin: 5%;
+   }
+
+}
+
+
+
+
+@media only screen and (max-width:700px ) {
+  .Skillblock:last-of-type{
+    margin-bottom: 150px !important;
+  }
+}
+
+@media only screen and (min-width:700px) and (max-width: 1100px){
+  .Skills {
+    grid-template-columns: 10% 80% 10%;
+    .Skills--container{
+      grid-column: 2/3;
+      grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .Skillblock:last-of-type{
+      grid-column: 1/3;
+      margin: auto;
+      margin-bottom: 150px;
+      width: 50%;
+    }
+  }
+
+  .Skills--description{
+     grid-column: 1/3;
+   }
+}
+
+@media only screen and (min-width: 1100px ) {
+  .Skills {
+    grid-template-columns: 20% 60% 20%;
+    .Skills--container{
+      grid-template-rows: auto auto;
+      grid-column: 2/3;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .Skills--description{
+     grid-column: 1/4;
+   }
+
 }
