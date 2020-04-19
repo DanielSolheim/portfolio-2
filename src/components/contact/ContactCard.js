@@ -4,7 +4,7 @@ import React from 'react';
 export default function ContactCard(){
    return (
      <div className="ContactCard">
-      <h1 > Daniel</h1>
+      <h1> Daniel</h1>
       <img className="portrait" src="https://res.cloudinary.com/dyic445sm/image/upload/v1587245400/Portfolio/daniel_efpnbg.jpg" alt="portrait Author"/>
       <h3> Front-end Developer </h3>
       <div className="card-email">

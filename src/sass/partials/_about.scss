@@ -1,17 +1,11 @@
 .About {
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  h2 span{
-    border-left: 3px solid $mainPurple;
-    padding: 10px;
-    height: auto; 
-  }
-
 }
 
 
 
 .Intro,.Experience, .Development{
   grid-column: 2/3;
-  margin-top: 50px;
+  margin-top: 30px;
 }

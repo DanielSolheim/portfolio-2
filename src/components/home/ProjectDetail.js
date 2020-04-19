@@ -33,8 +33,8 @@ useEffect(() => {
     <div className="ProjectDetail detail">
       <h1> {name} </h1>
       <div className="detail--links">
-         <a className="detail--link detail--link__github" href={githubLink}> Github </a>
-         <a className="detail--link detail--link__website" href={websiteLink}> Website </a>
+         <a className="detail--link detail--link__github" href={githubLink}>Github Repo</a>
+         <a className="detail--link detail--link__website" href={websiteLink}> See Website</a>
       </div>
       <div className="detail--stats">
          <p className="detail--stats__mainTool"> {mainTool} </p>
@@ -52,7 +52,6 @@ useEffect(() => {
          <li>{learned2}</li>
          <li>{learned3}</li>
       </ul>
-
     </div>
   );
 }

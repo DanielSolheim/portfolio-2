@@ -1,9 +1,9 @@
-footer{
+.pageFooter{
   width: 100%;
   background-color: black;
   display: grid;
-
-  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
   .copy{
     margin: auto;
     padding: 20px;

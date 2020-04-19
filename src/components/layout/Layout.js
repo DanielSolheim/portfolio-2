@@ -29,7 +29,7 @@ export default function Layout(){
         <div className="navLogo">
           <Link to="/">
              <img src="https://res.cloudinary.com/dyic445sm/image/upload/v1587245217/Portfolio/logo-white_jhnaoe.png" alt="logo" />
-          </Link>  
+          </Link>
         </div>
 
         <div className="navLinks navLinks__right">
@@ -50,7 +50,7 @@ export default function Layout(){
     </Switch>
 
 
-    <footer>
+    <footer className="pageFooter">
         <i className="copy"> @Daniel Solheim </i>
     </footer>
 

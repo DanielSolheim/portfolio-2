@@ -3,10 +3,18 @@
   padding: 0;
 }
 
+
+
 body{
+
   position: relative;
-  height: 1vw;
+
 }
+.Layout{
+  position: relative;
+  min-height: 100vh; 
+}
+
 
 
 h1,h2,h3,h4, button, a{
@@ -14,11 +22,16 @@ h1,h2,h3,h4, button, a{
 }
 
 p {
-
   font-family: 'Lora', serif;
+  line-height:25px;
 }
 
 
 .HomeHero p {
       font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  border-bottom: 2px solid $mainPurple;
+  padding: 10px 10px 5px 0;
 }
