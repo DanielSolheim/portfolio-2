@@ -25,7 +25,7 @@ useEffect(() => {
 
 }, [url])
 
- const {name, githubLink, websiteLink, hrs, mainTool, taskDescription, firstImage, secondDescription, secondImage, resultDescription, learned1, learned2, learned3} = detail;
+ const {name, githubLink, websiteLink, mainTool, taskDescription, firstImage, secondDescription, secondImage, resultDescription, learned1, learned2, learned3} = detail;
 
 
 
@@ -37,13 +37,13 @@ useEffect(() => {
          <a className="detail--link detail--link__website" href={websiteLink}> See Website</a>
       </div>
       <div className="detail--stats">
-         <p className="detail--stats__mainTool"> {mainTool} </p>
+         <h3 className="detail--stats__mainTool"> {mainTool} </h3>
       </div>
       <h3> The Task </h3>
       <p> {taskDescription} </p>
-      <img src={firstImage} />
+      <img src={firstImage} alt={name} />
       <p> {secondDescription} </p>
-      <img src={secondImage}/>
+      <img src={secondImage} alt={name}/>
       <h3> Result </h3>
       <p> {resultDescription} </p>
       <h3> Learned </h3>

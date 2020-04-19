@@ -5,8 +5,8 @@ import {useForm} from 'react-hook-form';
 
 const schema = yup.object().shape({
   name: yup.string().required('Name is Required'),
-  email: yup.string().email('invalid email').required('Name is Required'),
-  message: yup.string().min(10, 'message must be at least 10  characters').required('Name is Required'),
+  email: yup.string().email('Invalid email').required('Email is Required'),
+  message: yup.string().min(10, 'Message must be at least 10  characters').required()
 });
 
 
@@ -17,7 +17,7 @@ export default function ContactForm(){
   });
 
 function onSubmit(data) {
-  console.log(data);
+  console.log('data' , data);
 }
 
 
