@@ -155,6 +155,9 @@
     &--description{
       padding: 10px;
     }
+    &:last-of-type .project--link {
+      margin-bottom: 200px;
+    }
   }
 }
 
