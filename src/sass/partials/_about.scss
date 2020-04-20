@@ -18,7 +18,6 @@
 }
 
 
-
 @media only screen and (max-width: 600px){
   .ContactCard {
     width: 100%;
@@ -102,4 +101,9 @@
 
 .ContactCard .portrait{
   width: 100%;
+}
+
+
+.card-email img{
+  margin: auto;
 }

@@ -31,27 +31,35 @@ useEffect(() => {
 
   return (
     <div className="ProjectDetail detail">
-      <h1> {name} </h1>
-      <div className="detail--links">
-         <a className="detail--link detail--link__github" href={githubLink}>Github Repo</a>
-         <a className="detail--link detail--link__website" href={websiteLink}> See Website</a>
-      </div>
-      <div className="detail--stats">
-         <h3 className="detail--stats__mainTool"> {mainTool} </h3>
-      </div>
-      <h3> The Task </h3>
-      <p> {taskDescription} </p>
-      <img src={firstImage} alt={name} />
-      <p> {secondDescription} </p>
-      <img src={secondImage} alt={name}/>
-      <h3> Result </h3>
-      <p> {resultDescription} </p>
-      <h3> Learned </h3>
-      <ul>
-         <li>{learned1}</li>
-         <li>{learned2}</li>
-         <li>{learned3}</li>
-      </ul>
+           <div className="detail--links">
+              <h1> {name} </h1>
+              <a className="detail--link detail--link__github" href={githubLink}>Github Repo</a>
+              <a className="detail--link detail--link__website" href={websiteLink}> See Website</a>
+           </div>
+           <div className="detail--stats">
+              <h3 className="detail--stats__mainTool"> {mainTool} </h3>
+           </div>
+           <div className="detail--textsection detail--textsection__task">
+               <h3> The Task </h3>
+               <p> {taskDescription} </p>
+           </div>
+           <img src={firstImage} alt={name} />
+           <div className="detail--textsection">
+               <p> {secondDescription} </p>
+           </div>
+           <img src={secondImage} alt={name}/>
+           <div className="detail--textsection detail--textsection__result">
+               <h3> Result </h3>
+               <p> {resultDescription} </p>
+           </div>
+           <div className="detail--textsection">
+                <h3> Learned </h3>
+                <ul>
+                   <li>{learned1}</li>
+                   <li>{learned2}</li>
+                   <li>{learned3}</li>
+                </ul>
+           </div>
     </div>
   );
 }

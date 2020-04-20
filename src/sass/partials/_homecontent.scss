@@ -97,8 +97,8 @@
   &--description{
     padding: 10px 0px;
   }
-  &:last-of-type .project--link{
-    padding-bottom: 100px;
+  &:last-of-type {
+    margin-bottom: 100px;
   }
 }
 
@@ -124,15 +124,19 @@
   .HomeProjects{
     width: 90%;
     margin-left: 5%;
-
     img{
       max-height: 250px;
     }
   }
-
   .project {
     margin-bottom: 40px;
     border-bottom: 1px solid $mainPurple;
+    &--description{
+      padding: 10px;
+    }
+    &:last-of-type .project--link{
+      padding-bottom: 100px;
+    }
   }
 }
 
@@ -143,12 +147,14 @@
     width: 60%;
     margin-left: 20%;
   }
-
   .project {
     margin: 20px;
     margin-top: 40px;
     border-bottom: 1px solid $mainPurple;
     padding-bottom: 10px;
+    &--description{
+      padding: 10px;
+    }
   }
 }
 

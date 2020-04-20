@@ -4,7 +4,7 @@ export default function Development(){
   <div className="Development">
 
       <h2><span> Development </span>  </h2>
-     <p> I aim to develop simple web solutions that is accesible to everyone. i enjoy working on projects that im enthusiastic about and projects that have a positive impact on the users life. </p>
+     <p> I love the process of developing and making something from nothing. </p>
   </div>
   )
 }

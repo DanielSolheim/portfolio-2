@@ -2,9 +2,9 @@ import React from 'react';
 export default function Intro(){
   return(
   <div className="Intro">
-     <p> Hi. My name is Daniel, i am 25 years old and im located in Bergen, Norway
-      I am doing my second year as a front end developer at Noroff - School of Technology and Digital Media.
-      Im finishing my studies this semester and will be looking for work. </p>
+     <p> Hi. My name is Daniel, i am a 25 year old web developer from Bergen, Norway.
+      I am currently at my second year at  Noroff - School of Technology and Digital Media.
+      Im finishing my studies this semester and im looking for company that i can be a part of. </p>
   </div>
   )
 }
