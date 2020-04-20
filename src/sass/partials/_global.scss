@@ -3,33 +3,28 @@
   padding: 0;
 }
 
-
-
 body{
-  background-color: #f2f2f2;
+  background-color: $mainBackground;
   position: relative;
-
 }
+
 .Layout{
   position: relative;
   min-height: 100vh;
 }
 
-
-
-h1,h2,h3,h4, button, a{
-    font-family: 'Open Sans', sans-serif;
+h1,h2,h3,h4, button, a, input::placeholder, textarea::placeholder{
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
   font-family: 'Lora', serif;
   line-height:25px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
-
 .HomeHero p {
-      font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2 {

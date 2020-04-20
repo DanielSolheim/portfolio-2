@@ -12,7 +12,7 @@ export default function Skills(){
               </div>
               <SkillBlock skillHeading="Design" skill1="InDesign" skill2="Photoshop" skill3="Illustrator" skill4="UX design" skill5="Adobe XD" />
               <SkillBlock skillHeading="Front-End" skill1="React" skill2="Javascript" skill3="Node.js" skill4="HTML/CSS/SASS" skill5="Wordpress" />
-              <SkillBlock skillHeading="Other" skill1="Wireframe" skill2="User Personas" skill3="DevOps(familiar)" skill4="Gulp/Grunt" skill5="NPM" />
+              <SkillBlock skillHeading="Other" skill1="Wireframe" skill2="User Personas" skill3="DevOps" skill4="Gulp/Grunt" skill5="NPM" />
            </div>
     </div>
 

@@ -4,25 +4,33 @@
 
 .ContactCard {
   margin: auto;
+  background-color: white;
+  padding: 10px;
 }
 
-
-.Experience p, .Experience h2, .Development p, .Development h2{
+.Experience p, .Development p{
   margin-top: 20px;
+}
+
+.Intro, .Development, .Experience{
+  background-color: white;
+  padding: 20px;
 }
 
 
 
 @media only screen and (max-width: 600px){
   .ContactCard {
-    width: 80%;
-
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1100px){
   .ContactCard {
     width: 44%;
+    margin-bottom: 50px;
+
   }
 }
 
@@ -38,8 +46,6 @@
   .Experience{
     margin-bottom: 150px;
   }
-
-
 }
 
 @media only screen and (min-width: 1100px){
@@ -64,11 +70,6 @@
     margin-top: 30px;
   }
 }
-
-
-
-
-
 
 
 

@@ -1,14 +1,14 @@
 
 
 /* -------------------------------------- Contact------------------------- */
- .ContactForm h1 {
-  border-bottom: 2px solid $mainPurple;
-  padding: 10px 10px 5px 0;
-}
-
 
 .ContactForm{
   width: 100%;
+}
+
+ .ContactForm h2 {
+  border-bottom: 2px solid $mainPurple;
+  padding: 10px 10px 5px 0;
 }
 
 .form input, .form textarea {
@@ -41,26 +41,26 @@
 
 
 @media only screen and (max-width: 900px) {
-      .Contact {
-        display: grid;
-        grid-template-columns:5% 1fr 5%;
-        margin-top: 20px;
-      }
+   .Contact {
+     display: grid;
+     grid-template-columns:5% 1fr 5%;
+     margin-top: 20px;
+    }
 
-      .ContactForm{
-        grid-column: 2/3;
-        margin: auto;
-      }
+   .ContactForm{
+     grid-column: 2/3;
+     margin: auto;
+    }
 
-     .ContactForm{
-       margin-bottom: 300px;
-     }
+   .ContactForm{
+    margin-bottom: 300px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
    .Contact {
      display: grid;
-     grid-template-columns:20%  60% 20%;
+     grid-template-columns:20% 60% 20%;
      margin-top: 20px;
    }
 

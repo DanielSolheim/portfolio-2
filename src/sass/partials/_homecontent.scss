@@ -2,10 +2,10 @@
 
 
 .HomeHero{
-background-image: url('./../../images/forscreen2.jpg');
-background-size: cover;
-display: grid;
- p{
+  background-image: url('./../../images/forscreen2.jpg');
+  background-size: cover;
+  display: grid;
+  p{
    color: white;
    margin: auto;
   }
@@ -24,19 +24,18 @@ display: grid;
     height: 250px;
     grid-template-columns: 10% 1fr 10%;
     grid-row: 1fr 60px 60px 60px 1fr;
-    font-size: 2em;
-  }
-  .p1, .p2, .p3{
-    grid-column: 2/3;
+    font-size: 2em !important;
   }
   .p1 {
+    grid-column: 2/3;
     grid-row: 2/3;
   }
-
   .p2 {
+    grid-column: 2/3;
     grid-row: 3/4;
   }
   .p3 {
+    grid-column: 2/3;
     grid-row: 4/5;
   }
   .gradient-text{
@@ -54,23 +53,22 @@ display: grid;
      p{
        font-size: 3em;
      }
-   }
-   .p1, .p2, .p3{
+    }
+   .p1{
      grid-column: 1/2;
-   }
-   .p1 {
      grid-row: 2/3;
-   }
-
-   .p2 {
+    }
+   .p2{
+     grid-column: 1/2;
      grid-row: 3/4;
-   }
-   .p3 {
+    }
+   .p3{
+     grid-column: 1/2;
      grid-row: 4/5;
-   }
+    }
    .gradient-text{
        padding: 10px;
-   }
+    }
 }
 
 
@@ -80,20 +78,21 @@ display: grid;
 .HomeProjects{
   margin-top: 40px;
    img {
-      border-top: 1px solid black;
+      border-top: 1px solid $mainPurple;
       width: 100%;
-       }
-    h1 {
-      margin-bottom: 20px;
     }
-      }
+    h2 {
+      margin-bottom: 40px;
+    }
+}
 
 .project{
   display: grid;
+  background-color: white;
   &--header{
     padding: 10px 20px;
     border-left: 5px solid $mainPurple;
-    border-top: 1px solid black;
+    border-top: 1px solid $mainPurple;
   }
   &--description{
     padding: 10px 0px;
@@ -120,13 +119,12 @@ display: grid;
   }
 }
 
-
-
 /*  mobile */
 @media only screen and (max-width: 700px){
   .HomeProjects{
     width: 90%;
     margin-left: 5%;
+
     img{
       max-height: 250px;
     }
@@ -135,15 +133,8 @@ display: grid;
   .project {
     margin-bottom: 40px ;
     border-bottom: 1px solid $mainPurple;
-    padding-bottom: 10px;
-
   }
-
-
 }
-
-
-
 
 
 /* medium (pad ) */
@@ -162,9 +153,6 @@ display: grid;
 }
 
 
-
-
-
 /* screen */
 @media only screen and (min-width: 1000px){
   .HomeProjects{
@@ -176,7 +164,6 @@ display: grid;
       max-height: 175px;
     }
   }
-
 
   .project {
     grid-template-columns: 1fr 40px 1fr 1fr;

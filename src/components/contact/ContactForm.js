@@ -25,7 +25,7 @@ function onSubmit(data) {
 
 return(
    <div className="ContactForm">
-       <h1> Direct Message </h1>
+       <h2> Direct Message </h2>
        <form className="form" onSubmit={handleSubmit(onSubmit)}>
           <div className="form--item form--name">
             <input type="text" name="name" placeholder="Name....." ref={register()} />

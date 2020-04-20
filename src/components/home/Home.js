@@ -30,7 +30,7 @@ fetch(BASE_URL)
 
 
           <div className="HomeProjects">
-            <h1> Featured Projects </h1>
+            <h2> Featured Projects </h2>
 
               {projects.map(function(project){
                 const {name, id, description, imageSrc} = project;
